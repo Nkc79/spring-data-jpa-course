@@ -11,6 +11,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.domain.Sort;
 
+/**
+ * Created with IntelliJ IDEA.
+ * com.example.demo
+ *
+ * @Author: Mahl
+ * @Date: 2023/01/21/00:35
+ * @Description: spring-data-jpa-course
+ */
+
 @SpringBootApplication
 public class Application {
 
@@ -49,7 +58,8 @@ public class Application {
 
     private void generateRandomStudents(StudentRepository studentRepository) {
         Faker faker = new Faker();
-        for (int i = 0; i < 20; i++) {
+        Integer fakeNum = 20;
+        for (int i = 0; i < fakeNum; i++) {
             String firstName = faker.name().firstName();
             String lastName = faker.name().lastName();
             String email = String.format("%s.%s@gmail.com", firstName, lastName);

@@ -9,6 +9,16 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Optional;
 
+
+/**
+ * Created with IntelliJ IDEA.
+ * com.example.demo
+ *
+ * @Author: Mahl
+ * @Date: 2023/01/21/00:35
+ * @Description: spring-data-jpa-course
+ */
+
 public interface StudentRepository extends JpaRepository<Student, Long> {
     Optional<Student> findStudentByEmail(String email);
 

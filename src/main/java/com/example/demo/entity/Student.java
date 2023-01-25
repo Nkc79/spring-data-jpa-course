@@ -5,6 +5,14 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created with IntelliJ IDEA.
+ * com.example.demo
+ *
+ * @Author: Mahl
+ * @Date: 2023/01/21/00:35
+ * @Description: spring-data-jpa-course
+ */
 @Table(
         name = "student",
         uniqueConstraints = {

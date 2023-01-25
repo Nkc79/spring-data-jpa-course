@@ -2,6 +2,16 @@ package com.example.demo.entity;
 
 import javax.persistence.*;
 
+
+/**
+ * Created with IntelliJ IDEA.
+ * com.example.demo
+ *
+ * @Author: Mahl
+ * @Date: 2023/01/21/00:35
+ * @Description: spring-data-jpa-course
+ */
+
 @Entity(name = "StudentIdCard")
 @Table(name = "student_id_card",
         uniqueConstraints = {
